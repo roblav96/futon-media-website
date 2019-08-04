@@ -1,0 +1,43 @@
+{
+	"name": "register-futon-media",
+	"version": "0.0.0",
+	"description": "Registration front-end for futon.media",
+	"scripts": {
+		"del": "del dist node_modules",
+		"start": "del dist; parcel serve src/index.html --no-cache --cache-dir node_modules/.cache --no-autoinstall --log-level 4"
+	},
+	"dependencies": {
+		"@mdi/font": "^3.8.95",
+		"buefy": "^0.8.2",
+		"bulma": "^0.7.5",
+		"ky": "^0.11.2",
+		"lodash": "^4.17.15",
+		"tslib": "^1.10.0",
+		"vue": "^2.6.10",
+		"vue-class-component": "^7.1.0",
+		"vue-hot-reload-api": "^2.3.3",
+		"vue-property-decorator": "^8.2.1",
+		"vue-router": "^3.0.7"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.136",
+		"@types/node": "^12.6.9",
+		"@vue/component-compiler-utils": "^3.0.0",
+		"del-cli": "^2.0.0",
+		"dts-generate": "^1.2.3",
+		"npm-run-all": "^4.1.5",
+		"parcel-bundler": "^1.12.3",
+		"postcss-discard-comments": "^4.0.2",
+		"postcss-import": "^12.0.1",
+		"postcss-modules": "^1.4.1",
+		"postcss-preset-env": "^6.7.0",
+		"tailwindcss": "^1.0.6",
+		"typescript": "^3.5.3",
+		"vue-template-compiler": "^2.6.10"
+	},
+	"license": "Unlicense",
+	"author": "Robert Laverty <roblav96@gmail.com> (https://github.com/roblav96)",
+	"homepage": "https://github.com/roblav96/register-futon-media#readme",
+	"repository": "github:roblav96/register-futon-media",
+	"bugs": "https://github.com/roblav96/register-futon-media/issues"
+}
