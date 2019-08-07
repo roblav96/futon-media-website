@@ -1,0 +1,36 @@
+@import '~bulma/sass/utilities/initial-variables';
+
+// $black: #1A202C;
+// $black-bis: #2D3748;
+// $black-ter: #4A5568;
+// $grey-darker: #4A5568;
+// $grey-dark: #718096;
+// $grey: #A0AEC0;
+// $grey-light: #CBD5E0;
+// $grey-lighter: #E2E8F0;
+// $white-ter: #EDF2F7;
+// $white-bis: #F7FAFC;
+// $white: #FFFFFF;
+
+$primary: $green;
+
+$family-sans-serif: (
+	-apple-system,
+	BlinkMacSystemFont,
+	'Segoe UI',
+	Roboto,
+	'Helvetica Neue',
+	Arial,
+	'Noto Sans',
+	sans-serif,
+	'Apple Color Emoji',
+	'Segoe UI Emoji',
+	'Segoe UI Symbol',
+	'Noto Color Emoji'
+);
+$family-monospace: (Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+
+@import '~bulma/sass/utilities/_all';
+
+@import '~bulma';
+@import '~buefy/src/scss/buefy';

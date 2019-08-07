@@ -1,16 +1,29 @@
 <template>
-	<h1 class="text-4xl font-bold text-center text-blue-500">Hello world!</h1>
+	<div class="">
+		<TheNavBar />
+		<router-view />
+	</div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 
-@Component({})
+@Component({
+	components: {
+		TheNavBar: () => import('@/components/TheNavBar.vue'),
+	},
+})
 export default class App extends Vue {}
 </script>
 
-<!-- <style src="tailwindcss/preflight.css"></style>
+<!-- <style src="tailwindcss/base.css"></style> -->
 <style src="@mdi/font/css/materialdesignicons.css"></style>
-<style src="buefy/dist/buefy.css"></style>
+<!-- <style src="buefy/dist/buefy.css"></style> -->
+<style lang="scss" src="@/theme.scss"></style>
 <style src="tailwindcss/utilities.css"></style>
-<style src="./styles.css"></style> -->
+
+<style>
+html {
+	min-height: 100vh;
+}
+</style>

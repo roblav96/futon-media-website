@@ -1,11 +1,14 @@
 import { Vue, Component } from 'vue-property-decorator'
-import App from './App.vue'
+import router from '@/router'
+import App from '@/App.vue'
 
-@Component({ render: h => h(App) })
+@Component({ router, render: h => h(App) })
 class Vm extends Vue {
 	created() {
 		console.log(`created`)
-		this.$mount('#app')
+		router.onReady(route => {
+			this.$mount('#app')
+		})
 	}
 	mounted() {
 		console.log(`mounted`)
