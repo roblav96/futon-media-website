@@ -17,8 +17,11 @@ export default class App extends Vue {}
 </script>
 
 <!-- <style src="tailwindcss/base.css"></style> -->
-<style src="@mdi/font/css/materialdesignicons.css"></style>
+<!-- <style src="@mdi/font/css/materialdesignicons.css"></style> -->
 <!-- <style src="buefy/dist/buefy.css"></style> -->
+<style src="typeface-open-sans/index.css"></style>
+<style src="typeface-heebo/index.css"></style>
+<style src="typeface-inter/inter.css"></style>
 <style lang="scss" src="@/theme.scss"></style>
 <style src="tailwindcss/utilities.css"></style>
 
