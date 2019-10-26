@@ -16,4 +16,4 @@ Vue.use(Buefy, {
 	defaultTooltipType: 'is-dark',
 } as BuefyConfig)
 
-import '@/vm'
+import './vm'

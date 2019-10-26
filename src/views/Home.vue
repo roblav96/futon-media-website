@@ -1,9 +1,9 @@
 <template>
-	<section class="hero is-dark has-background-black-ter is-fullheight">
+	<section class="hero is-dark has-background-black-ter is-fullheight-with-navbar">
 		<div class="hero-body">
 			<div class="container">
 				<h1 class="title">
-					Fullheight title
+					Home
 				</h1>
 				<h2 class="subtitle">
 					Fullheight subtitle

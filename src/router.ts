@@ -6,18 +6,19 @@ Vue.use(VueRouter)
 export default new VueRouter({
 	mode: 'history',
 	base: process.env.BASE_URL,
+	linkActiveClass: 'is-active',
 	routes: [
+		{ path: '*', redirect: { name: 'home' } },
 		{
 			path: '/',
 			name: 'home',
-			component: () => import('@/views/Home.vue'),
+			component: () => import('./views/Home.vue'),
 		},
 		{
 			path: '/register',
 			name: 'register',
-			component: () => import('@/views/Register.vue'),
+			component: () => import('./views/Register.vue'),
 		},
-		{ path: '*', redirect: { name: 'home' } },
 	],
 })
 

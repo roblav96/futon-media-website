@@ -1,8 +1,8 @@
 <template>
-	<div class="">
+	<main>
 		<TheNavBar />
 		<router-view />
-	</div>
+	</main>
 </template>
 
 <script lang="ts">
@@ -10,23 +10,14 @@ import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
 	components: {
-		TheNavBar: () => import('@/components/TheNavBar.vue'),
+		TheNavBar: () => import('./components/TheNavBar.vue'),
 	},
 })
-export default class App extends Vue {}
+export default class extends Vue {}
 </script>
 
-<!-- <style src="tailwindcss/base.css"></style> -->
-<!-- <style src="@mdi/font/css/materialdesignicons.css"></style> -->
-<!-- <style src="buefy/dist/buefy.css"></style> -->
-<style src="typeface-open-sans/index.css"></style>
-<style src="typeface-heebo/index.css"></style>
-<style src="typeface-inter/inter.css"></style>
-<style lang="scss" src="@/theme.scss"></style>
+<style src="@ibm/plex/css/ibm-plex.css"></style>
+<style src="@mdi/font/css/materialdesignicons.css"></style>
+<style lang="scss" src="./styles/variables.scss"></style>
+<style src="tailwindcss/base.css"></style>
 <style src="tailwindcss/utilities.css"></style>
-
-<style>
-html {
-	min-height: 100vh;
-}
-</style>

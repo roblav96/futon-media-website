@@ -1,6 +1,6 @@
 import { Vue, Component } from 'vue-property-decorator'
-import router from '@/router'
-import App from '@/App.vue'
+import router from './router'
+import App from './App.vue'
 
 @Component({ router, render: h => h(App) })
 class Vm extends Vue {

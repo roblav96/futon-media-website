@@ -1,5 +1,16 @@
 <template>
-	<h1 class="text-4xl font-bold text-center text-blue-500">Hello Register!</h1>
+	<section class="hero is-dark has-background-black-ter is-fullheight-with-navbar">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">
+					Register
+				</h1>
+				<h2 class="subtitle">
+					Fullheight subtitle
+				</h2>
+			</div>
+		</div>
+	</section>
 </template>
 
 <script lang="ts">
