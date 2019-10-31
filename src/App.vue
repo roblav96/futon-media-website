@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<TheNavBar />
+		<NavBar />
 		<router-view />
 	</main>
 </template>
@@ -10,10 +10,14 @@ import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
 	components: {
-		TheNavBar: () => import('./components/TheNavBar.vue'),
+		NavBar: () => import('./components/NavBar.vue'),
 	},
 })
-export default class extends Vue {}
+export default class extends Vue {
+	get route() {
+		return this.$route.name
+	}
+}
 </script>
 
 <style src="@ibm/plex/css/ibm-plex.css"></style>
