@@ -1,8 +1,8 @@
 <template>
-	<main>
+	<div id="app">
 		<NavBar />
 		<router-view />
-	</main>
+	</div>
 </template>
 
 <script lang="ts">
@@ -15,6 +15,8 @@ import { Vue, Component } from 'vue-property-decorator'
 })
 export default class extends Vue {}
 </script>
+
+<style></style>
 
 <!-- <style src="@ibm/plex/css/ibm-plex.css"></style>
 <style src="@mdi/font/css/materialdesignicons.css"></style>

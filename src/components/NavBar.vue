@@ -1,9 +1,9 @@
 <template>
-	<b-navbar fixed-top class="is-dark" wrapper-class="container">
+	<b-navbar fixed-top :is-active.sync="active" class="is-dark" wrapper-class="container">
 		<template slot="brand">
 			<b-navbar-item tag="router-link" to="start">
-				<img class="mr-2" src="/undraw_movie_night.svg" alt="Futon Media" />
-				<!-- <img class="mr-2" src="/emby-logo.png" alt="Futon Media" /> -->
+				<!-- <img class="mr-2" src="/undraw_movie_night.svg" alt="Futon Media" /> -->
+				<img class="mr-2" src="/emby-logo.png" alt="Emby Media" />
 				<!-- <b-icon icon="sofa" class="mr-2" size="is-medium" /> -->
 				<span class="font-bold text-lg">Futon Media</span>
 			</b-navbar-item>
@@ -20,19 +20,19 @@
 		</template> -->
 		<template slot="end">
 			<b-navbar-item tag="router-link" to="start">
-				<b-icon icon="rocket" class="mr-1" />
-				<span>Quick Start</span>
+				<b-icon icon="rocket" class="ml-0 mr-1" />
+				Quick Start
 			</b-navbar-item>
 			<b-navbar-item tag="router-link" to="help">
-				<b-icon icon="help" class="mr-1" />
-				<span>Help</span>
+				<b-icon icon="help" class="ml-0 mr-1" />
+				Help
 			</b-navbar-item>
 			<b-navbar-item tag="div">
 				<div class="buttons">
-					<a class="button is-success pl-5" :click="openSignUp">
+					<router-link class="button is-success pl-5" to="signup">
 						<b-icon icon="account-plus" />
 						<strong>Sign Up</strong>
-					</a>
+					</router-link>
 				</div>
 			</b-navbar-item>
 		</template>
@@ -41,12 +41,12 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import SignUp from './SignUp.vue'
 
 @Component({})
 export default class NavBar extends Vue {
-	openSignUp() {
-		SignUp.open()
+	active = false
+	mounted() {
+		this.$router.afterEach(() => this.active = false)
 	}
 }
 </script>

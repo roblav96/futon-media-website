@@ -22,6 +22,9 @@ Vue.use(Buefy, {
 	defaultTooltipType: 'is-dark',
 } as BuefyConfig)
 
+import HotFlash from './plugins/HotFlash'
+Vue.use(HotFlash)
+
 import VHelpers from './plugins/VHelpers'
 Vue.use(VHelpers)
 
