@@ -1,39 +1,44 @@
+// const webpack = require('webpack')
+
 module.exports = {
 	// filenameHashing: false,
 	css: {
 		// extract: true,
 		sourceMap: process.env.NODE_ENV == 'development',
 		loaderOptions: {
-			// 	sass: {
-			// 		implementation: require('sass'),
-			// 		sassOptions: {
-			// 			fiber: require('fibers'),
-			// 		},
-			// 	},
-			// 	// scss: {
-			// 	// 	implementation: require('sass'),
-			// 	// 	sassOptions: {
-			// 	// 		fiber: require('fibers'),
-			// 	// 	},
-			// 	// },
-			// 	// scss: {
-			// 	// 	prependData: `@import "~@/styles.scss";`,
-			// 	// },
-			postcss: {
-				plugins: [
-					require('postcss-import'),
-					// require('postcss-discard-comments')({ removeAll: true }),
-					require('tailwindcss'),
-					require('postcss-preset-env')({ stage: 1 }),
-				],
+			sass: {
+				sassOptions: {
+					fiber: require('fibers'),
+				},
 			},
+			// scss: {
+			// 	implementation: require('sass'),
+			// 	sassOptions: {
+			// 		fiber: require('fibers'),
+			// 	},
+			// },
+			// 	// scss: {
+			// 	// 	prependData: `@import "~@/styles/variables.scss";`,
+			// 	// },
+			// postcss: {
+			// 	plugins: [
+			// 		// require('postcss-import'),
+			// 		// require('postcss-discard-comments')({ removeAll: true }),
+			// 		require('tailwindcss'),
+			// 		// require('postcss-preset-env')({ stage: 1 }),
+			// 	],
+			// },
 		},
 	},
 	// configureWebpack(config) {
-	// 	delete config.optimization.splitChunks
+	// 	// delete config.node.process
+	// 	// config.optimization.usedExports = true
+	// 	// config.optimization.concatenateModules = true
+	// 	// config.plugins.push(new webpack.optimize.ModuleConcatenationPlugin())
+	// 	// delete config.optimization.splitChunks
 	// },
 	chainWebpack(config) {
-		config.resolve.alias.store.delete('@')
+		// config.resolve.alias.store.delete('@')
 		config.node.store.set('module', 'empty')
 		// config.devtool('source-map')
 		config.devtool(process.env.NODE_ENV == 'development' ? 'eval-source-map' : 'source-map')

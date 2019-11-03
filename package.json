@@ -16,7 +16,6 @@
 		"teeny-request": "^5.3.0",
 		"tslib": "^1.10.0",
 		"vue": "^2.6.10",
-		"vue-class-component": "^7.1.0",
 		"vue-property-decorator": "^8.2.1",
 		"vue-router": "^3.0.7"
 	},
@@ -30,8 +29,6 @@
 		"dts-generate": "^1.2.3",
 		"fibers": "^4.0.2",
 		"npm-run-all": "^4.1.5",
-		"postcss-import": "^12.0.1",
-		"postcss-preset-env": "^6.7.0",
 		"sass": "^1.23.1",
 		"sass-loader": "^8.0.0",
 		"tailwindcss": "^1.0.6",

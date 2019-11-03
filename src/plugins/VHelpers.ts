@@ -1,7 +1,7 @@
 import Vue, { PluginObject } from 'vue'
 import * as _ from 'lodash'
 
-export default {
+export const VHelpers = {
 	install(Vue) {
 		Object.defineProperty(Vue.prototype, '$vm', {
 			get(this: Vue) {
@@ -16,6 +16,7 @@ export default {
 		Vue.prototype.$production = process.env.NODE_ENV == 'production'
 	},
 } as PluginObject<never>
+export default VHelpers
 
 declare module 'vue/types/vue' {
 	interface Vue {
