@@ -6,6 +6,7 @@ import App from './App.vue'
 class Vm extends Vue {
 	created() {
 		console.log(`created`)
+		console.log(`this.$vm ->`, this.$vm)
 		router.onReady(route => {
 			this.$mount('#app')
 		})

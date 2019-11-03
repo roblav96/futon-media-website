@@ -3,7 +3,7 @@
 		<div class="hero-body">
 			<div class="container">
 				<h1 class="title">
-					SignUp
+					QuickStart
 				</h1>
 				<h2 class="subtitle">
 					Fullheight subtitle
@@ -17,5 +17,5 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component({})
-export default class SignUp extends Vue {}
+export default class QuickStart extends Vue {}
 </script>

@@ -2,9 +2,12 @@
 	<section class="hero is-dark has-background-black-ter is-fullheight-with-navbar">
 		<div class="hero-body items-start">
 			<div class="container">
-				<div class="columns">
+				<!-- <figure class="image is-128x128"> -->
+					<img src="/emby-banner-dark.png" />
+				<!-- </figure> -->
+				<!-- <div class="columns">
 					<div class="column">
-						<img src="/undraw_chilling_8tii.svg" />
+						<img src="/undraw_chilling.svg" />
 					</div>
 					<div class="column">
 						Second column
@@ -21,7 +24,7 @@
 				</h1>
 				<h2 class="subtitle">
 					Fullheight subtitle
-				</h2>
+				</h2> -->
 			</div>
 		</div>
 	</section>

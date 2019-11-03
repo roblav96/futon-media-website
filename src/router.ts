@@ -15,9 +15,9 @@ export default new VueRouter({
 			component: () => import('./views/Home.vue'),
 		},
 		{
-			path: '/signup',
-			name: 'signup',
-			component: () => import('./views/SignUp.vue'),
+			path: '/quickstart',
+			name: 'quickstart',
+			component: () => import('./views/QuickStart.vue'),
 		},
 	],
 })

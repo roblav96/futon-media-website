@@ -13,15 +13,11 @@ import { Vue, Component } from 'vue-property-decorator'
 		NavBar: () => import('./components/NavBar.vue'),
 	},
 })
-export default class extends Vue {
-	get route() {
-		return this.$route.name
-	}
-}
+export default class extends Vue {}
 </script>
 
-<style src="@ibm/plex/css/ibm-plex.css"></style>
+<!-- <style src="@ibm/plex/css/ibm-plex.css"></style>
 <style src="@mdi/font/css/materialdesignicons.css"></style>
 <style lang="scss" src="./styles/variables.scss"></style>
 <style src="tailwindcss/base.css"></style>
-<style src="tailwindcss/utilities.css"></style>
+<style src="tailwindcss/utilities.css"></style> -->

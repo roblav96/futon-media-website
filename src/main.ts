@@ -1,5 +1,11 @@
 import 'dts-generate'
 
+import '@ibm/plex/css/ibm-plex.css'
+import '@mdi/font/css/materialdesignicons.css'
+import './styles/variables.scss'
+// import 'tailwindcss/base.css'
+import 'tailwindcss/utilities.css'
+
 import Vue from 'vue'
 Vue.config.productionTip = false
 Vue.config.performance = false
@@ -15,5 +21,8 @@ Vue.use(Buefy, {
 	defaultToastDuration: 5000,
 	defaultTooltipType: 'is-dark',
 } as BuefyConfig)
+
+import VHelpers from './plugins/VHelpers'
+Vue.use(VHelpers)
 
 import './vm'

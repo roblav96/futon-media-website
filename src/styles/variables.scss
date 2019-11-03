@@ -12,10 +12,23 @@
 // $white-bis: #F7FAFC;
 // $white: #FFFFFF;
 
+// $green: #b86bff;
+// $green: #23d160;
 $primary: $green;
 
-$family-sans-serif: ('IBM Plex Sans', $family-sans-serif);
-$family-monospace: ('IBM Plex Mono', $family-monospace);
+$family-sans-serif: 'IBM Plex Sans', $family-sans-serif;
+$family-monospace: 'IBM Plex Mono', $family-monospace;
+
+$gap: 64px;
+$tablet: 640px;
+$desktop: 768px;
+$widescreen: 1024px;
+$fullhd: 1280px;
+
+$icon-dimensions: 24px;
+$icon-dimensions-small: 18px;
+$icon-dimensions-medium: 36px;
+$icon-dimensions-large: 48px;
 
 @import '~bulma/sass/utilities/_all';
 
