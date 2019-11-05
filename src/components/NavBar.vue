@@ -3,7 +3,7 @@
 		<template slot="brand">
 			<b-navbar-item tag="router-link" to="start">
 				<!-- <img class="mr-2" src="/undraw_movie_night.svg" alt="Futon Media" /> -->
-				<img class="mr-2" src="/emby-logo.png" alt="Emby Media" />
+				<img class="mr-3" src="/emby-logo.png" alt="Emby Media" />
 				<!-- <b-icon icon="sofa" class="mr-2" size="is-medium" /> -->
 				<span class="font-bold text-lg">Futon Media</span>
 			</b-navbar-item>
@@ -19,14 +19,14 @@
 			</b-navbar-item>
 		</template> -->
 		<template slot="end">
-			<b-navbar-item tag="router-link" to="start">
+			<!-- <b-navbar-item tag="router-link" to="start">
 				<b-icon icon="rocket" class="ml-0 mr-1" />
 				Quick Start
 			</b-navbar-item>
 			<b-navbar-item tag="router-link" to="help">
 				<b-icon icon="help" class="ml-0 mr-1" />
 				Help
-			</b-navbar-item>
+			</b-navbar-item> -->
 			<b-navbar-item tag="div">
 				<div class="buttons">
 					<router-link class="button is-success pl-5" to="signup">

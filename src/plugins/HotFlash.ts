@@ -12,7 +12,7 @@ export const HotFlash = {
 			document.body.classList.add('hidden')
 		}
 		if (status == 'idle') {
-			setTimeout(() => document.body.classList.remove('hidden'), 100)
+			setTimeout(() => document.body.classList.remove('hidden'), 0)
 		}
 	} as Parameters<typeof module.hot.addStatusHandler>[0],
 }

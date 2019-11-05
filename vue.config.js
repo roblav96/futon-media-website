@@ -49,5 +49,13 @@ module.exports = {
 			args[0].clearConsole = false
 			return args
 		})
+		config.plugin('define').tap(args => {
+			args[0]['process.env'].DOMAIN = `"${
+				process.env.NODE_ENV == 'development'
+					? 'http://localhost:8096'
+					: 'https://futon.media'
+			}"`
+			return args
+		})
 	},
 }

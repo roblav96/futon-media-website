@@ -17,6 +17,13 @@
 // $green: #48c774;
 $primary: $green;
 
+// $scheme-main: $black;
+// $scheme-invert: $white;
+
+// $text: $white-ter;
+// $text-light: $grey-light;
+// $text-strong: $white;
+
 $family-sans-serif: 'IBM Plex Sans', $family-sans-serif;
 $family-monospace: 'IBM Plex Mono', $family-monospace;
 
@@ -33,7 +40,7 @@ $icon-dimensions-large: 48px;
 
 $navbar-height: 3.5rem;
 $input-icon-active-color: $grey;
-// $border-light: $grey-lighter;
+$border-light: $grey-lighter;
 
 @import '~bulma/sass/utilities/_all';
 
