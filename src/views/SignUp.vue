@@ -4,7 +4,7 @@
 			<div class="columns is-mobile is-gapless is-centered">
 				<div class="column is-narrow">
 					<form
-						class="panel is-link has-background-white-bis"
+						class="panel is-success has-background-white-bis max-w-xs"
 						v-on:submit.prevent="submit"
 					>
 						<p class="panel-heading">Sign Up</p>
