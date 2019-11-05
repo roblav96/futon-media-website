@@ -19,11 +19,11 @@
 			</b-navbar-item>
 		</template> -->
 		<template slot="end">
-			<!-- <b-navbar-item tag="router-link" to="start">
+			<b-navbar-item tag="router-link" to="start">
 				<b-icon icon="rocket" class="ml-0 mr-1" />
 				Quick Start
 			</b-navbar-item>
-			<b-navbar-item tag="router-link" to="help">
+			<!-- <b-navbar-item tag="router-link" to="help">
 				<b-icon icon="help" class="ml-0 mr-1" />
 				Help
 			</b-navbar-item> -->

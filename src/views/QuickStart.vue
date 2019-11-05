@@ -14,10 +14,6 @@
 					<img src="/emby-clients.png" />
 				</figure>
 			</div>
-			<router-link class="button is-rounded is-medium is-success pl-5" to="signup">
-				<b-icon size="is-medium" icon="account-plus" class="ml-1 mr-3" />
-				<strong>Sign Up</strong>
-			</router-link>
 		</div>
 	</section>
 </template>
