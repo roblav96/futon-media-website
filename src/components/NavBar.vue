@@ -1,7 +1,7 @@
 <template>
 	<b-navbar fixed-top :is-active.sync="active" class="is-dark" wrapper-class="container">
 		<template slot="brand">
-			<b-navbar-item tag="router-link" to="start">
+			<b-navbar-item tag="router-link" to="home">
 				<!-- <img class="mr-2" src="/undraw_movie_night.svg" alt="Futon Media" /> -->
 				<img class="mr-3" src="/emby-logo.png" alt="Emby Media" />
 				<!-- <b-icon icon="sofa" class="mr-2" size="is-medium" /> -->
@@ -19,7 +19,7 @@
 			</b-navbar-item>
 		</template> -->
 		<template slot="end">
-			<b-navbar-item tag="router-link" to="start">
+			<b-navbar-item tag="router-link" to="quickstart">
 				<b-icon icon="rocket" class="ml-0 mr-1" />
 				Quick Start
 			</b-navbar-item>
