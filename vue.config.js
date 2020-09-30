@@ -1,5 +1,6 @@
 // const webpack = require('webpack')
 
+/** @type { import("@vue/cli-service").ProjectOptions } */
 module.exports = {
 	// filenameHashing: false,
 	css: {
@@ -37,6 +38,7 @@ module.exports = {
 	// 	// config.plugins.push(new webpack.optimize.ModuleConcatenationPlugin())
 	// 	// delete config.optimization.splitChunks
 	// },
+	/** @param config { import("webpack-chain") } */
 	chainWebpack(config) {
 		// config.resolve.alias.store.delete('@')
 		config.node.store.set('module', 'empty')
@@ -52,8 +54,8 @@ module.exports = {
 		config.plugin('define').tap(args => {
 			args[0]['process.env'].DOMAIN = `"${
 				process.env.NODE_ENV == 'development'
-					? 'http://localhost:8096'
-					: 'https://futon.media'
+					? 'http://192.168.2.43:8096'
+					: 'https://emby.futon.media'
 			}"`
 			return args
 		})

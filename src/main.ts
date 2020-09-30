@@ -1,4 +1,4 @@
-import 'dts-generate'
+// import 'dts-generate'
 
 import '@ibm/plex/css/ibm-plex.css'
 import '@mdi/font/css/materialdesignicons.css'
@@ -11,8 +11,8 @@ Vue.config.productionTip = false
 Vue.config.performance = false
 Vue.config.devtools = false
 
-import Buefy, { BuefyConfig } from 'buefy'
-Vue.use(Buefy, {
+import Buefy from 'buefy'
+Buefy.install(Vue, {
 	defaultDialogCancelText: 'Cancel',
 	defaultDialogConfirmText: 'Confirm',
 	defaultIconPack: 'mdi',
@@ -20,7 +20,7 @@ Vue.use(Buefy, {
 	defaultSnackbarDuration: 5000,
 	defaultToastDuration: 5000,
 	defaultTooltipType: 'is-dark',
-} as BuefyConfig)
+})
 
 import HotFlash from './plugins/HotFlash'
 Vue.use(HotFlash)

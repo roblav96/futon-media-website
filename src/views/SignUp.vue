@@ -71,9 +71,9 @@ import axios from 'axios'
 
 @Component({})
 export default class SignUp extends Vue {
-	referral = ''
 	email = ''
 	password = ''
+	referral = 'roblav96'
 	agree = false
 	busy = false
 
@@ -106,7 +106,7 @@ export default class SignUp extends Vue {
 				})
 			}
 		} catch (error) {
-			console.error(`submit -> %O`, error.message)
+			console.error(`submit -> %O`, error)
 			this.$buefy.toast.open({ message: error.message, type: 'is-danger' })
 		}
 		this.busy = false
