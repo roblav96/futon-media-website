@@ -9,7 +9,7 @@ module.exports = {
 		loaderOptions: {
 			sass: {
 				sassOptions: {
-					fiber: require('fibers'),
+					// fiber: require('fibers'),
 				},
 			},
 			// scss: {
