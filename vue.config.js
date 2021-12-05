@@ -54,7 +54,7 @@ module.exports = {
 		config.plugin('define').tap(args => {
 			args[0]['process.env'].DOMAIN = `"${
 				process.env.NODE_ENV == 'development'
-					? 'http://192.168.2.43:8096'
+					? 'http://192.168.1.252:8096'
 					: 'https://emby.futon.media'
 			}"`
 			return args
