@@ -24,6 +24,11 @@ export default new VueRouter({
 			name: 'quickstart',
 			component: () => import('./views/QuickStart.vue'),
 		},
+		{
+			path: '/relay',
+			name: 'relay',
+			component: () => import('./views/Relay.vue'),
+		},
 	],
 })
 
